@@ -1,0 +1,125 @@
+header {
+  border-bottom: 1px solid #ececec;
+  & .container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+}
+
+.head {
+  display: flex;
+  align-items: center;
+}
+.head__logo {
+  margin-right: 93px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--logo-color);
+}
+.head__logo-part {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.head__navigation {
+  display: flex;
+  list-style-type: none;
+}
+.head__navigation-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--logo-color);
+  }
+  &:focus {
+    color: var(--logo-color);
+  }
+}
+.head__navigation-option {
+  position: relative;
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 48px;
+  left: 0;
+  background-color: var(--logo-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+.connect {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+.connect__contacts {
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--secondary-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-color);
+  }
+}
+.connect__mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--secondary-color);
+
+  .connect__contacts:hover &,
+  .connect__contacts:focus & {
+    fill: var(--logo-color);
+  }
+}
+.connect__tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--secondary-color);
+
+  .connect__contacts:hover &,
+  .connect__contacts:focus & {
+    fill: var(--logo-color);
+  }
+}

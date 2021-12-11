@@ -1,0 +1,57 @@
+.our-advants {
+  display: flex;
+  list-style-type: none;
+  padding-bottom: 0px;
+}
+.our-advants__list {
+  margin-right: 30px;
+  width: 270px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--our-team-background-color);
+  }
+}
+
+.antenna::before {
+  background-image: url("../images/antenna.png");
+  background-size: 70px 70px;
+}
+.clock::before {
+  background-image: url("../images/clock.png");
+  background-size: 70px 70px;
+}
+.diagram::before {
+  background-image: url("../images/diagram.png");
+  background-size: 70px 70px;
+}
+.astronaut::before {
+  background-image: url("../images/astronaut.png");
+  background-size: 70px 70px;
+}
+.our-advants__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.our-advants__advants-list {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
